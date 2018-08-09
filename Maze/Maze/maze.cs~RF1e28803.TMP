@@ -9,7 +9,7 @@ namespace Maze
         public maze()
         {
             int[,] maze = new int[5, 5] {
-                { 1,1,1,1,1},
+                { 1,1,1,0,0},
                 { 0,0,1,0,0},
                 { 1,1,1,1,1}
                 ,{ 1,0,0,0,0}
@@ -35,7 +35,7 @@ namespace Maze
             Console.WriteLine("\nOutput ");
             print(output);
 
-            //Console.WriteLine(outputStr);
+            Console.WriteLine(outputStr);
         }
 
         private bool mazeOutput(int[,] input, int[,] output, int row, int col, char side)
